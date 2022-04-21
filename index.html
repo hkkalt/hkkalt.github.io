@@ -1,0 +1,13 @@
+<!-- worst code possible i know -->
+<head></head>
+<body>
+<button onclick="generate()">generate</button>
+<p id="text"></p>
+<script>
+const characters = ['hornet', 'ghost', 'thk', 'pv', 'pk', 'tiso', 'tamer', 'grimm', 'nkg', 'marissa', 'xero', 'markoth', 'zote', 'iselda', 'broken vessel', 'radiance', 'false knight', 'monomon', 'herrah', 'lurien', 'watchers', 'brooding mawlek', 'volt twister', 'soul twister', 'white lady', 'machine', 'lace', 'shades']
+const situations = ['consensual vanilla', 'consensual harm', 'non-con vanilla', 'non-con breed', 'non-con harm', 'eternal bind', 'incubator', 'vore', 'guro']
+function generate() {
+	document.getElementById("text").innerHTML = characters[Math.ceil(Math.random() * characters.length) - 1] + " + " + characters[Math.ceil(Math.random() * characters.length) - 1] + " team up " + situations[Math.ceil(Math.random() * situations.length) - 1] + " on " + characters[Math.ceil(Math.random() * characters.length) - 1]
+}
+</script>
+</body>
