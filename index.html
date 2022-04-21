@@ -4,10 +4,11 @@
 <button onclick="generate()">generate</button>
 <p id="text"></p>
 <script>
-const characters = ['hornet', 'ghost', 'thk', 'pv', 'pk', 'tiso', 'tamer', 'grimm', 'nkg', 'marissa', 'xero', 'markoth', 'zote', 'iselda', 'broken vessel', 'radiance', 'false knight', 'monomon', 'herrah', 'lurien', 'watchers', 'brooding mawlek', 'volt twister', 'soul twister', 'white lady', 'machine/toy', 'lace', 'shades']
+const characters = ['hornet', 'ghost', 'thk', 'pv', 'pk', 'tiso', 'tamer', 'grimm', 'nkg', 'marissa', 'xero', 'markoth', 'zote', 'iselda', 'broken vessel', 'radiance', 'false knight', 'monomon', 'herrah', 'lurien', 'watchers', 'brooding mawlek', 'volt twister', 'soul twister', 'white lady', 'lace', 'shades']
 const situations = ['and have basic, consensual intercourse with', 'and consensually breed', 'and consensually immobilize', 'and consensually vore', 'and consensually kill', 'and consensually harm', 'and non-consensually have sex with', 'and non-consensually breed', 'and non-consensually mindbreak', 'and non-consensually stimulate', 'and non-consensually immobilize', 'and non-consensually hurt', 'and non-consensually kill', 'and consensually vore', 'and non-consensually vore', 'and consensually hard vore (chewing described)', 'and non-consensually hard vore (chewing described)', 'and use the following character as an incubator:', 'and keep this character as a slave:', 'and genital vore this character:', 'and chokes this character:', 'and drown this character:', "and snuff out this character's loved ones in front of them:", 'and kill each other in front of this character:', 'and form a sexual suicide pact with this character:']
+const team = ['and (together)', 'or']
 function generate() {
-	document.getElementById("text").innerHTML = characters[Math.ceil(Math.random() * characters.length) - 1] + " + " + characters[Math.ceil(Math.random() * characters.length) - 1] + " team up " + situations[Math.ceil(Math.random() * situations.length) - 1] + " on " + characters[Math.ceil(Math.random() * characters.length) - 1]
+	document.getElementById("text").innerHTML = characters[Math.ceil(Math.random() * characters.length) - 1] + " + " + characters[Math.ceil(Math.random() * characters.length) - 1] + " " + team[Math.ceil(Math.random() * team.length) - 1] + " " + situations[Math.ceil(Math.random() * situations.length) - 1] + " " + characters[Math.ceil(Math.random() * characters.length) - 1]
 }
 </script>
 </body>
