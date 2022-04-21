@@ -17,7 +17,7 @@ const situations = ['have basic, consensual intercourse with', 'consensually bre
 		    "snuff out this character's loved ones in front of them:", 'kill each other in front of this character:', 
 		    'form a sexual suicide pact with this character:', 'non-consensually melt', 'consensually freeze', 'non-consensually freeze']
 const genderbend = ['', '', '', '', '', '', '', '', '', '', 'Male!', 'Fem!']
-const team = ['and (together)', 'or']
+const team = ['together with', 'or']
 function generate() {
 	document.getElementById("text").innerHTML = genderbend[Math.ceil(Math.random() * genderbend.length) - 1] + 
 		characters[Math.ceil(Math.random() * characters.length) - 1] + " " + team[Math.ceil(Math.random() * team.length) - 1] + " " + 
