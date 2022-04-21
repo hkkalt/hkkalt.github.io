@@ -4,11 +4,27 @@
 <button onclick="generate()">generate</button>
 <p id="text"></p>
 <script>
-const characters = ['hornet', 'ghost', 'thk', 'pv', 'pk', 'tiso', 'tamer', 'grimm', 'nkg', 'marissa', 'xero', 'markoth', 'zote', 'iselda', 'broken vessel', 'radiance', 'false knight', 'monomon', 'herrah', 'lurien', 'watchers', 'brooding mawlek', 'volt twister', 'soul twister', 'white lady', 'lace', 'shades']
-const situations = ['and have basic, consensual intercourse with', 'and consensually breed', 'and consensually immobilize', 'and consensually vore', 'and consensually kill', 'and consensually harm', 'and non-consensually have sex with', 'and non-consensually breed', 'and non-consensually mindbreak', 'and non-consensually stimulate', 'and non-consensually immobilize', 'and non-consensually hurt', 'and non-consensually kill', 'and consensually vore', 'and non-consensually vore', 'and consensually hard vore (chewing described)', 'and non-consensually hard vore (chewing described)', 'and use the following character as an incubator:', 'and keep this character as a slave:', 'and genital vore this character:', 'and chokes this character:', 'and drown this character:', "and snuff out this character's loved ones in front of them:", 'and kill each other in front of this character:', 'and form a sexual suicide pact with this character:']
+const characters = ['hornet', 'ghost', 'thk', 'pv', 'pk', 'tiso', 'tamer', 'grimm', 'nkg', 'marissa', 'xero', 'markoth', 'zote', 'iselda', 
+		    'broken vessel', 'radiance', 'false knight', 'monomon', 'herrah', 'lurien', 'watchers', 'brooding mawlek', 'volt twister', 
+		    'soul twister', 'white lady', 'lace', 'shades', 'one mantis lord', 'two mantis lords', 'three mantis lords', 'quirrel', 'brumm',
+		    'vespa', 'hive knight', 'shade lord', 'seer', 'traitor lord', 'emilitia', 'oro', 'mato', 'sheo', 'nailsmith', 'dryya', 'willoh',
+		    'adult!grimmchild', 'carmelita', 'sherma']
+const situations = ['have basic, consensual intercourse with', 'consensually breed', 'consensually immobilize', 'consensually vore', 'consensually kill',
+		    'consensually harm', 'non-consensually have sex with', 'non-consensually breed', 'non-consensually mindbreak', 
+		    'non-consensually stimulate', 'non-consensually immobilize', 'non-consensually hurt', 'non-consensually kill', 'consensually melt', 
+		    'non-consensually vore', 'consensually hard vore (chewing described)', 'non-consensually hard vore (chewing described)', 
+		    'use the following character as an incubator:', 'keep this character as a slave:', 'genital vore this character:', 
+		    'choke this character:', 'drown this character:', 'waterboard this character:', 'suffocate this character:', 
+		    "snuff out this character's loved ones in front of them:", 'kill each other in front of this character:', 
+		    'form a sexual suicide pact with this character:', 'non-consensually melt', 'consensually freeze', 'non-consensually freeze']
+const genderbend = ['', '', '', '', '', '', '', '', '', '', 'male!', 'fem!']
 const team = ['and (together)', 'or']
 function generate() {
-	document.getElementById("text").innerHTML = characters[Math.ceil(Math.random() * characters.length) - 1] + " + " + characters[Math.ceil(Math.random() * characters.length) - 1] + " " + team[Math.ceil(Math.random() * team.length) - 1] + " " + situations[Math.ceil(Math.random() * situations.length) - 1] + " " + characters[Math.ceil(Math.random() * characters.length) - 1]
+	document.getElementById("text").innerHTML = genderbend[Math.ceil(Math.random() * genderbend.length) - 1] + 
+		characters[Math.ceil(Math.random() * characters.length) - 1] + " " + team[Math.ceil(Math.random() * team.length) - 1] + " " + 
+		genderbend[Math.ceil(Math.random() * genderbend.length) - 1] + characters[Math.ceil(Math.random() * characters.length) - 1] + " " + " " +
+		situations[Math.ceil(Math.random() * situations.length) - 1] + " " + genderbend[Math.ceil(Math.random() * genderbend.length) - 1] + 
+		characters[Math.ceil(Math.random() * characters.length) - 1]
 }
 </script>
 </body>
