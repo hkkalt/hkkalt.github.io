@@ -4,11 +4,11 @@
 <button onclick="generate()">generate</button>
 <p id="text"></p>
 <script>
-const characters = ['hornet', 'ghost', 'thk', 'pv', 'pk', 'tiso', 'tamer', 'grimm', 'nkg', 'marissa', 'xero', 'markoth', 'zote', 'iselda', 
-		    'broken vessel', 'radiance', 'false knight', 'monomon', 'herrah', 'lurien', 'watchers', 'brooding mawlek', 'volt twister', 
-		    'soul twister', 'white lady', 'lace', 'shades', 'one mantis lord', 'two mantis lords', 'three mantis lords', 'quirrel', 'brumm',
-		    'vespa', 'hive knight', 'shade lord', 'seer', 'traitor lord', 'emilitia', 'oro', 'mato', 'sheo', 'nailsmith', 'dryya', 'willoh',
-		    'adult!grimmchild', 'carmelita', 'sherma']
+const characters = ['hornet', 'Little Ghost', 'THK', 'PV', 'PK', 'Tiso', 'God Tamer', 'Grimm', 'NKG', 'Marissa', 'Xero', 'Markoth', 'Zote', 'Iselda', 
+		    'Broken Vessel', 'Radiance', 'False Knight', 'Monomon', 'Herrah', 'Lurien', 'Watchers', 'Brooding Mawlek', 'Volt Twister', 
+		    'Soul Twister', 'White Lady', 'Lace', 'Shades', 'Mantis Lords', 'Quirrel', 'Brumm',
+		    'Vespa', 'Hive Knight', 'Shade Lord', 'Seer', 'Traitor Lord', 'Emilitia', 'Oro', 'Mato', 'Sheo', 'Nailsmith', 'Dryya', 'Willoh',
+		    'Adult!Grimmchild', 'Carmelita', 'Sherma']
 const situations = ['have basic, consensual intercourse with', 'consensually breed', 'consensually immobilize', 'consensually vore', 'consensually kill',
 		    'consensually harm', 'non-consensually have sex with', 'non-consensually breed', 'non-consensually mindbreak', 
 		    'non-consensually stimulate', 'non-consensually immobilize', 'non-consensually hurt', 'non-consensually kill', 'consensually melt', 
@@ -17,7 +17,7 @@ const situations = ['have basic, consensual intercourse with', 'consensually bre
 		    'choke this character:', 'drown this character:', 'waterboard this character:', 'suffocate this character:', 
 		    "snuff out this character's loved ones in front of them:", 'kill each other in front of this character:', 
 		    'form a sexual suicide pact with this character:', 'non-consensually melt', 'consensually freeze', 'non-consensually freeze']
-const genderbend = ['', '', '', '', '', '', '', '', '', '', 'male!', 'fem!']
+const genderbend = ['', '', '', '', '', '', '', '', '', '', 'Male!', 'Fem!']
 const team = ['and (together)', 'or']
 function generate() {
 	document.getElementById("text").innerHTML = genderbend[Math.ceil(Math.random() * genderbend.length) - 1] + 
